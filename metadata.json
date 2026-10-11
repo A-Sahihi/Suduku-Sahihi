@@ -1,0 +1,6 @@
+{
+  "name": "Ahmadreza Sahihi - Sudoku Master",
+  "description": "سامانه تخصصی آموزش، حل و آزمون سودوکو استاد احمدرضا صحیحی با رابط کاربری فارسی و تحلیل تکنیک‌ها",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
