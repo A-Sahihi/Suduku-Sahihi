@@ -5,11 +5,10 @@
     <title>در حال انتقال به سامانه سودوکو...</title>
     <script>
       // Single Page Application redirect script for GitHub Pages with HashRouter
-      var pathSegmentsToKeep = 1;
       var l = window.location;
-      var repoBase = l.pathname.split('/').slice(0, 1 + pathSegmentsToKeep).join('/');
-      var subPath = l.pathname.slice(1).split('/').slice(pathSegmentsToKeep).join('/');
-      var targetHash = '#/' + (subPath ? subPath : '') + (l.search || '') + (l.hash || '');
+      var repoBase = '/Suduku-Sahihi';
+      var path = l.pathname.replace(/^\/Suduku-Sahihi\/?/, '');
+      var targetHash = '#/' + (path ? path : '') + (l.search || '') + (l.hash || '');
       l.replace(
         l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
         repoBase + '/' + targetHash
@@ -19,6 +18,6 @@
   <body style="background:#020617; color:#f8fafc; font-family:sans-serif; text-align:center; padding-top:50px; direction:rtl;">
     <h3 style="color:#f59e0b;">Ahmadreza Sahihi - سامانه تخصصی سودوکو</h3>
     <p>در حال انتقال به سامانه سودوکو...</p>
-    <a href="./#/" style="color:#f59e0b; text-decoration:none;">ورود به صفحه اصلی</a>
+    <a href="/Suduku-Sahihi/#/" style="color:#f59e0b; text-decoration:none;">ورود به صفحه اصلی</a>
   </body>
 </html>
